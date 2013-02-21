@@ -7,7 +7,7 @@
 
 // local variables
 var game = "King of the Hill"
-var win = "true"
+var win = true
 var score = "100"
 
 
@@ -87,13 +87,8 @@ var airAttack = {
 	this.radius = newRadius;
 	}
 };	
-// conditionals
-if (win === true) {
-true; ("i won and you thought you could beat me")
-} else {
-	("ill get you next game!")
-};
-	
+
+
 
 // Main Code
 say("were going to play a match of " + game + " first to " + score + " points wins!")
@@ -108,5 +103,11 @@ say("i need " + points + " more points to win")
 say("i have enough point to use a air attack it has a blast radius of " + airAttack.area() + " meters. ")
 airAttack.setRadius(20);
 say("using the mutator i picked up the blast radius is now " + airAttack.area() + "  meters thats more then enough to destroy you.")
-if();
-
+if (win === true){
+	if (score >= 100){
+	score = score 
+	console.log("i got to " + score + " points first. i beat you this time")
+	} else { 
+	("ill get you next time")	
+	}
+};
