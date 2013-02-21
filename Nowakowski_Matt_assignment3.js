@@ -58,7 +58,7 @@ var kit = function (name) {
 	
 		kitChange.push(item);
 		} else {
-		say("Can't equip choose support class or select a different weapon.")
+		say("Can't equip rockets choose the support class or select a different weapon.")
 	}	
 };
 var getName = function () { return name; };
@@ -88,6 +88,25 @@ var airAttack = {
 	}
 };	
 // conditionals
-
+if (win === true) {
+true; ("i won and you thought you could beat me")
+} else {
+	("ill get you next game!")
+};
+	
 
 // Main Code
+say("were going to play a match of " + game + " first to " + score + " points wins!")
+say("choose one of the 3 classes ") + handleData(json2) +(".");
+say("ill play as the " + sniper.name());
+say("can the " + sniper.name() + " use rockets? I dont know try it.")
+sniper.changeKit("rockets") 
+say("no i cant use rockets. ill use the barrett instead.")
+say("lets begin")
+oneHill();
+say("i need " + points + " more points to win")
+say("i have enough point to use a air attack it has a blast radius of " + airAttack.area() + " meters. ")
+airAttack.setRadius(20);
+say("using the mutator i picked up the blast radius is now " + airAttack.area() + "  meters thats more then enough to destroy you.")
+if();
+
