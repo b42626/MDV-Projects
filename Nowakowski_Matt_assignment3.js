@@ -24,7 +24,7 @@ var numToWin = function(firstNumber,secondNumber){
 	var points = numToWin(100,30);
 
 var say = function(message) { console.log(message); };
-// json data
+
 
 var handleData = function (json) {
 	for (var i = 0; i < json.loadouts.length; i++){
@@ -33,7 +33,7 @@ var handleData = function (json) {
 	};
 };
 
-// functions
+
 var oneHill = function(){
 var hillNames = [ "mid center", "southern hill", "data center", "radio tower"],
 	secPerHill = [10,10,10,10];
