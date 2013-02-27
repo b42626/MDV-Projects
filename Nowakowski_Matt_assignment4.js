@@ -55,7 +55,7 @@ function fixCase(val) {
 function changeSeparator(val) {
    
     if (val) {
-        return say("a/" + "b/" + "c/");
+        return say("k/" + "a/" + "t/");
     }
 }
 
@@ -98,6 +98,6 @@ function smlNum() {
 checkNum ("123-456-7890");
 checkEmail("jubjub@gmail.com");
 fixCase("donkey kong");
-changeSeparator("a,b,c");
+changeSeparator("k,a,t");
 daysPassed(new Date(2012, 10, 06));
 smlNum();
