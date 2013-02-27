@@ -34,6 +34,24 @@ var checkNum = function (testNumber) {
     }
 }
 
+// 3. Title-case a string (split into words, then uppercase the first letter of each word)
+
+function fixCase(fixThis) {
+ 
+ 
+    String.prototype.toProperCase = function () {
+ 
+        return this.replace(/\w\S*/g, function (txt) {
+            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+        });
+    };
+   
+    fixThis.toProperCase();
+    console.log(fixThis.toProperCase());
+}
+
+
 
 checkNum ("123-456-7890");
 checkEmail("jubjub@gmail.com");
+fixCase("donkey kong");
