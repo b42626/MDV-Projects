@@ -68,6 +68,29 @@ function daysPassed(date) {
     say(Math.ceil((today.getTime() - halo4.getTime()) / (one_day)) + " days have passed since Halo 4 was released. " + date)
 }
 
+// 6. Find the smallest value in an array that is greater than a given number
+
+function smlNum() {
+    function bigNum(element, index, array) {
+        return (element >= 13);
+    }
+    var filtered = [300, 20, 109, 7, 23, 2020, 78, 33, 82].filter(bigNum);
+  
+    bigNum();
+   
+    filtered.sort(function (a, b) {
+        return a - b;
+    });
+      
+    return say(filtered.shift());
+}
+ 
+
+
+
+
+
+
 
 
 
@@ -77,3 +100,4 @@ checkEmail("jubjub@gmail.com");
 fixCase("donkey kong");
 changeSeparator("a,b,c");
 daysPassed(new Date(2012, 10, 06));
+smlNum();
