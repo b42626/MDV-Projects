@@ -47,7 +47,7 @@ function fixCase(val) {
     };
    
     val.toProperCase();
-    console.log(val.toProperCase());
+    say(val.toProperCase());
 }
 
 // 4. Given a string that is a list of things separated by a given string, as well as another string separator, return a string with the first separator changed to the second: "a,b,c" + "," + "/" → "a/b/c".
@@ -55,9 +55,19 @@ function fixCase(val) {
 function changeSeparator(val) {
    
     if (val) {
-        return console.log("a/" + "b/" + "c/");
+        return say("a/" + "b/" + "c/");
     }
 }
+
+// 5. Find the number of hours or days difference between two dates.
+
+function daysPassed(date) {
+    var halo4 = date;
+    today = new Date(2013, 02, 27);
+    var one_day = 1000 * 60 * 60 * 12;
+    say(Math.ceil((today.getTime() - halo4.getTime()) / (one_day)) + " days have passed since Halo 4 was released. " + date)
+}
+
 
 
 
@@ -66,3 +76,4 @@ checkNum ("123-456-7890");
 checkEmail("jubjub@gmail.com");
 fixCase("donkey kong");
 changeSeparator("a,b,c");
+daysPassed(new Date(2012, 10, 06));
