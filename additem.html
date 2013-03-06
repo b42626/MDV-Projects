@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <!--
+    web app part 1
+  	Matt Nowakowski
+  	Visual frameworks
+    1303
+   -->
+<html lang="en">
+	<head>
+		<title>Load outs for a shooter</title>
+		<meta type="charset" content = "utf-8" />
+		<meta type="robots" content="index,follow" />
+		<meta type="viewport" content="user-scalable=no, width=device-width" />
+		<meta type="description" content="Manage your load outs" />
+		<meta type="keywords" content = "load outs, add load outs, vfw, Matt Nowakowski" />
+	</head>
+	<body>
+		<header>
+			<h1><a href="index.html">Load out screen</a></h2>
+			<h2>Add load out</h2>
+		</header>
+		<article>
+			<p>
+				<form action="additem.html" method="post">
+					<fieldset>
+						<legend>Info</legend>
+							<ul>
+								<li>
+									<label for="mtype" id="mtype">Weapon Type:</label> 
+									<select id="Weapon" />
+										<optgroup label="assualt rifles">
+											<option value="AK47">AK47</option>
+											<option value="ScarH">ScarH</option>
+											<option value="M4a1">M4a1</option>
+											<option value="Aug A3">M16</option>
+										</optgroup>
+										<optgroup label="Sniper rifles">
+											<option value="Dragonov">Dragonov</option>
+											<option value="Barrett M90">Barrett M90</option>
+											<option value="Ballista">Ballista</option>
+										</optgroup>
+										<optgroup label="LMGs">
+											<option value="RPK">RPK</option>
+											<option value="HMAR">HMAR</option>
+											<option value="LSAT">LSAT</option>
+										</optgroup>
+									</select>
+								</li>
+								<li><label for="mname">Load out Name: </label> <input type="text" id="mname" /></li>
+								<li><label for="mtopic">Class Selection:</label>  
+									<input type="radio" value="Sniper" id="Sniper" name="mtopic" /><label for="Sniper">sniper</label>
+									<input type="radio" value="Assault" id="Assault" name="mtopic" /><label for="Assualt">Assault</label>
+									<input type="radio" value="Support" id="Support" name="mtopic" /><label for="Support">Support</label>
+								</li>
+								<li><label for="mtags">Load out tags:</label> <input type="text" id="mtags" /></li>
+								<li><label for="mrating">Load out rating: </label>1 <input type="range" min="1" max="10" name="rating" type="range" id="rating" />10 </li>
+								<li><label for="mdate">Load out made: </label> <input type="date" id="date" placeholder="day/month/year" /></li>
+								<li><label for="mcomments">Load out Comments:</label> <textarea id="comments" /></textarea></li>
+								<input type="submit" value="Add Load out" /> 
+						</ul>
+					</fieldset>
+				</form>
+			</p>
+		</article>
+		<section>
+				<nav>
+					<ul id="numlist">
+						<li><a href="additem.html">Add Load out</a></li>
+						<li><a href="#">View All Load outs</a></li>
+					</ul>
+				</nav>
+		</section>
+		<footer></footer>
+	</body>
+</html>
